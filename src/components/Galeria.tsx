@@ -35,9 +35,9 @@ const FOTOS = [
 
 /* Videos de la galería - formato vertical */
 const VIDEOS = [
-  { src: "/videos/video-2.mp4", titulo: "Vuelo 20min – Valle de Piedra" },
-  { src: "/videos/video-3.mp4", titulo: "Vuelo 30min – Experiencia completa" },
-  { src: "/videos/video-4.mp4", titulo: "Vista aérea espectacular" },
+  { src: "/videos/video-2.mp4", titulo: "Vuelo 15min – Cascada y Páramo de Belmira" },
+  { src: "/videos/video-3.mp4", titulo: "Vuelo 20min – Valle de Piedra" },
+  { src: "/videos/video-4.mp4", titulo: "Vuelo 30min – Represa" },
 ];
 
 const Galeria = () => {
