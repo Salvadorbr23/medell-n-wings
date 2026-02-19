@@ -14,22 +14,31 @@ import vuelo3 from "@/assets/vuelo-3.jpg";
 import vuelo4 from "@/assets/vuelo-4.jpg";
 import vuelo5 from "@/assets/vuelo-5.jpg";
 import vuelo6 from "@/assets/vuelo-6.jpg";
+import vuelo7 from "@/assets/vuelo-7.jpg";
+import vuelo8 from "@/assets/vuelo-8.jpg";
+import vuelo9 from "@/assets/vuelo-9.jpg";
+import vuelo10 from "@/assets/vuelo-10.jpg";
 
 /* Fotos de la galería - agregar/quitar aquí */
 const FOTOS = [
   { src: vuelo1, alt: "Vuelo biplaza parapente sobre Medellín con vista panorámica" },
   { src: vuelo2, alt: "Pasajera disfrutando vuelo parapente San Félix" },
+  { src: vuelo7, alt: "Vista aérea represa desde parapente en Antioquia" },
   { src: vuelo3, alt: "Vista aérea Medellín desde parapente en San Félix" },
+  { src: vuelo8, alt: "Dos parapentes volando sobre Medellín" },
   { src: vuelo4, alt: "Piloto y pasajera después de aterrizar en San Félix" },
+  { src: vuelo10, alt: "Parapente sobre montañas verdes vía San Pedro" },
   { src: vuelo5, alt: "Vuelo parapente biplaza sobre montañas verdes de Antioquia" },
+  { src: vuelo9, alt: "Piloto certificado y pasajera feliz tras aterrizar" },
   { src: vuelo6, alt: "Pareja volando en parapente sobre el Valle de Aburrá" },
 ];
 
-/* Videos de la galería - agregar/quitar aquí (rutas en /public/videos/) */
+/* Videos de la galería - formato vertical */
 const VIDEOS = [
   { src: "/videos/video-1.mp4", titulo: "Vuelo 15min – Cascada y Páramo" },
   { src: "/videos/video-2.mp4", titulo: "Vuelo 20min – Valle de Piedra" },
   { src: "/videos/video-3.mp4", titulo: "Vuelo 30min – Experiencia completa" },
+  { src: "/videos/video-4.mp4", titulo: "Vista aérea espectacular" },
 ];
 
 const Galeria = () => {
@@ -43,7 +52,7 @@ const Galeria = () => {
         </h2>
 
         {/* Grid de fotos */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 max-w-5xl mx-auto mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-4 max-w-6xl mx-auto mb-12">
           {FOTOS.map((foto, i) => (
             <button
               key={i}
@@ -60,16 +69,16 @@ const Galeria = () => {
           ))}
         </div>
 
-        {/* Videos */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-5xl mx-auto">
+        {/* Videos verticales */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
           {VIDEOS.map((video, i) => (
-            <div key={i} className="rounded-xl overflow-hidden shadow-lg">
+            <div key={i} className="rounded-xl overflow-hidden shadow-lg bg-card">
               <video
                 controls
                 muted
                 playsInline
                 preload="metadata"
-                className="w-full aspect-video object-cover"
+                className="w-full aspect-[9/16] object-cover"
               >
                 <source src={video.src} type="video/mp4" />
               </video>

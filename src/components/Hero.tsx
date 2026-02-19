@@ -13,7 +13,7 @@
 import { Phone, ChevronDown, Camera } from "lucide-react";
 
 /* Textos del hero - editar aquí */
-const HERO_TITLE = "Vive la libertad de volar sobre Medellín";
+const HERO_TITLE = "FIRST CLASS Parapente Medellín";
 const HERO_SUBTITLE = "First Class Parapente – Experiencias únicas en San Félix con piloto certificado Andrés Felipe Pulgarín. Fotos y videos HD incluidos.";
 const HERO_URGENCY = "Cupos diarios limitados – Reserva ahora tu aventura.";
 

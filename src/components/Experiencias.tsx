@@ -7,10 +7,11 @@
    Para cambiar imágenes: reemplazar los imports de fotos.
    ========================================================================== */
 
-import { Clock, Camera, Mountain, Star, Phone, Check } from "lucide-react";
+import { Clock, Phone, Check, MapPin } from "lucide-react";
 import vuelo1 from "@/assets/vuelo-1.jpg";
 import vuelo6 from "@/assets/vuelo-6.jpg";
 import vuelo5 from "@/assets/vuelo-5.jpg";
+import transporte from "@/assets/transporte.png";
 
 /* Paquetes de vuelo - agregar/quitar/editar aquí */
 const PAQUETES = [
@@ -91,7 +92,6 @@ const Experiencias = () => {
                   loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
-                {/* Overlay gradiente */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
                 {/* Duración sobre la imagen */}
@@ -113,7 +113,6 @@ const Experiencias = () => {
                 <h3 className="font-display text-xl text-card-foreground mb-1">{paq.nombre}</h3>
                 <p className="text-card-foreground/60 text-sm mb-5">{paq.descripcion}</p>
 
-                {/* Lista de incluidos */}
                 <ul className="space-y-2 mb-6 flex-1">
                   {paq.incluye.map((item, i) => (
                     <li key={i} className="flex items-center gap-2 text-card-foreground/70 text-sm">
@@ -123,7 +122,6 @@ const Experiencias = () => {
                   ))}
                 </ul>
 
-                {/* Botón CTA → WhatsApp */}
                 <a
                   href={paq.whatsapp}
                   target="_blank"
@@ -142,20 +140,65 @@ const Experiencias = () => {
           ))}
         </div>
 
-        {/* Transporte adicional */}
-        <div className="max-w-lg mx-auto bg-card rounded-2xl p-6 flex flex-col sm:flex-row items-center gap-4 border border-card-foreground/10 shadow-lg">
-          <div className="text-center sm:text-left flex-1">
-            <p className="font-bold text-card-foreground text-lg">🚐 Transporte hotel ↔ despegue</p>
-            <p className="text-card-foreground/60 text-sm">$130.000 COP (1-2 personas) · Recogida en tu hotel</p>
+        {/* Transporte adicional - Card grande igual a los paquetes de vuelo */}
+        <div className="max-w-md mx-auto">
+          <div className="group relative rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl flex flex-col">
+            {/* Imagen del vehículo */}
+            <div className="relative h-56 md:h-64 overflow-hidden">
+              <img
+                src={transporte}
+                alt="Vehículo First Class Parapente - Transporte hotel a despegue"
+                loading="lazy"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+
+              {/* Info sobre la imagen */}
+              <div className="absolute bottom-4 left-4 flex items-center gap-2">
+                <div className="bg-foreground/20 backdrop-blur-md rounded-full px-4 py-1.5 flex items-center gap-2">
+                  <MapPin className="w-4 h-4 text-primary" />
+                  <span className="text-sm font-bold" style={{ color: "white" }}>Hotel ↔ Despegue</span>
+                </div>
+              </div>
+
+              <div className="absolute bottom-4 right-4">
+                <span className="font-display text-3xl font-bold text-primary text-gold-glow">$130.000</span>
+              </div>
+            </div>
+
+            {/* Contenido */}
+            <div className="bg-card flex flex-col flex-1 p-6">
+              <h3 className="font-display text-xl text-card-foreground mb-1">🚐 Transporte Privado</h3>
+              <p className="text-card-foreground/60 text-sm mb-5">
+                Recogida en tu hotel en Medellín y regreso. Cómodo, seguro y puntual. Capacidad 1-2 personas.
+              </p>
+
+              <ul className="space-y-2 mb-6 flex-1">
+                <li className="flex items-center gap-2 text-card-foreground/70 text-sm">
+                  <Check className="w-4 h-4 flex-shrink-0" style={{ color: "hsl(145, 56%, 40%)" }} />
+                  Recogida en tu hotel
+                </li>
+                <li className="flex items-center gap-2 text-card-foreground/70 text-sm">
+                  <Check className="w-4 h-4 flex-shrink-0" style={{ color: "hsl(145, 56%, 40%)" }} />
+                  Ida y vuelta incluida
+                </li>
+                <li className="flex items-center gap-2 text-card-foreground/70 text-sm">
+                  <Check className="w-4 h-4 flex-shrink-0" style={{ color: "hsl(145, 56%, 40%)" }} />
+                  Vehículo con branding First Class
+                </li>
+              </ul>
+
+              <a
+                href={TRANSPORTE_WHATSAPP}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full flex items-center justify-center gap-2 font-bold py-3.5 rounded-xl text-center transition-all bg-accent text-accent-foreground hover:brightness-110"
+              >
+                <Phone className="w-4 h-4" />
+                Agregar transporte
+              </a>
+            </div>
           </div>
-          <a
-            href={TRANSPORTE_WHATSAPP}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-accent text-accent-foreground font-bold px-6 py-3 rounded-xl text-sm hover:brightness-110 transition-all whitespace-nowrap"
-          >
-            Agregar transporte
-          </a>
         </div>
       </div>
     </section>
