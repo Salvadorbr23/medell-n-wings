@@ -35,7 +35,6 @@ const FOTOS = [
 
 /* Videos de la galería - formato vertical */
 const VIDEOS = [
-  { src: "/videos/video-1.mp4", titulo: "Vuelo 15min – Cascada y Páramo" },
   { src: "/videos/video-2.mp4", titulo: "Vuelo 20min – Valle de Piedra" },
   { src: "/videos/video-3.mp4", titulo: "Vuelo 30min – Experiencia completa" },
   { src: "/videos/video-4.mp4", titulo: "Vista aérea espectacular" },
@@ -70,7 +69,7 @@ const Galeria = () => {
         </div>
 
         {/* Videos verticales */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
           {VIDEOS.map((video, i) => (
             <div key={i} className="rounded-xl overflow-hidden shadow-lg bg-card">
               <video
