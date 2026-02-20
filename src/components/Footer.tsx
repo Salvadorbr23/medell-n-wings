@@ -38,7 +38,7 @@ const Footer = () => {
         </div>
 
         <p className="text-foreground/40 text-sm">
-          First Class Parapente Medellín – Vive la libertad del vuelo. © {new Date().getFullYear()}
+          First Class Parapente Medellín – Vive la libertad del vuelo. © Hecho por Brothers tic {new Date().getFullYear()}
         </p>
       </div>
     </footer>
