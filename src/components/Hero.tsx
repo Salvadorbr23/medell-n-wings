@@ -14,7 +14,7 @@ import { Phone, ChevronDown, Camera } from "lucide-react";
 
 /* Textos del hero - editar aquí */
 const HERO_TITLE = "FIRST CLASS PARAPENTE EN MEDELLÍN";
-const HERO_SUBTITLE = "'Vuela hacía hacía la libertad' Vive una experiencia única en San Félix con piloto certificado Felipe Pulgarín. Fotos y videos HD incluidos.";
+const HERO_SUBTITLE = "'Vuela hacía la libertad' Vive una experiencia única en San Félix con piloto certificado Felipe Pulgarín. Fotos y videos HD incluidos.";
 const HERO_URGENCY = "Cupos diarios limitados – Reserva ahora tu aventura.";
 
 /* URL WhatsApp - cambiar número aquí */
