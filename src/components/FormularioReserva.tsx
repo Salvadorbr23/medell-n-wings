@@ -26,6 +26,7 @@ const FormularioReserva = () => {
   const [form, setForm] = useState({
     nombre: "",
     whatsapp: "",
+    documento: "",
     correo: "",
     personas: "1",
     paquete: "15min",
@@ -47,7 +48,7 @@ const FormularioReserva = () => {
     e.preventDefault();
 
     /* Validar campos requeridos */
-    if (!form.nombre.trim() || !form.whatsapp.trim() || !form.terminos) return;
+    if (!form.nombre.trim() || !form.whatsapp.trim() || !form.documento.trim() || !form.terminos) return;
 
     /* Construir mensaje WhatsApp prellenado */
     const paqueteLabel = PAQUETE_OPTIONS.find((p) => p.value === form.paquete)?.label || form.paquete;
@@ -55,6 +56,7 @@ const FormularioReserva = () => {
       "Hola First Class Parapente, nueva reserva:",
       `Nombre: ${form.nombre.trim()}`,
       `WhatsApp: ${form.whatsapp.trim()}`,
+      `Documento: ${form.documento.trim()}`,
       form.correo ? `Correo: ${form.correo.trim()}` : "",
       `Personas: ${form.personas}`,
       `Paquete: ${paqueteLabel}`,
@@ -126,6 +128,21 @@ const FormularioReserva = () => {
                 onChange={handleChange}
                 className="w-full rounded-lg border border-card-foreground/20 bg-card text-card-foreground px-4 py-3 focus:ring-2 focus:ring-primary outline-none"
                 placeholder="+57 300 123 4567"
+              />
+            </div>
+
+            {/* Cédula o Pasaporte */}
+            <div>
+              <label className="block text-card-foreground font-semibold text-sm mb-1">Cédula o Pasaporte *</label>
+              <input
+                type="text"
+                name="documento"
+                required
+                maxLength={30}
+                value={form.documento}
+                onChange={handleChange}
+                className="w-full rounded-lg border border-card-foreground/20 bg-card text-card-foreground px-4 py-3 focus:ring-2 focus:ring-primary outline-none"
+                placeholder="Número de cédula o pasaporte"
               />
             </div>
 

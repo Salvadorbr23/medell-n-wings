@@ -18,6 +18,7 @@ import Hero from "@/components/Hero";
 import Experiencias from "@/components/Experiencias";
 import Diferencia from "@/components/Diferencia";
 import Galeria from "@/components/Galeria";
+import Testimonios from "@/components/Testimonios";
 import SobreNosotros from "@/components/SobreNosotros";
 import FormularioReserva from "@/components/FormularioReserva";
 import Footer from "@/components/Footer";
@@ -32,6 +33,7 @@ const Index = () => {
         <Experiencias />
         <Diferencia />
         <Galeria />
+        <Testimonios />
         <SobreNosotros />
         <FormularioReserva />
       </main>
