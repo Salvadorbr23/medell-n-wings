@@ -29,7 +29,7 @@ const Diferencia = () => {
           {/* Mapa de Google Maps - San Félix, Medellín */}
           <div className="rounded-2xl overflow-hidden shadow-lg aspect-[4/3]">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0!2d-75.58!3d6.35!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428dfb80fad05%3A0x42137cfcc7b53b56!2sSan%20F%C3%A9lix%2C%20Km%206%20v%C3%ADa%20Medell%C3%ADn%20-%20San%20Pedro!5e0!3m2!1ses!2sco!4v1700000000000"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3966.0!2d-75.5990736!3d6.3307205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1700000000000"
               width="100%"
               height="100%"
               style={{ border: 0 }}
