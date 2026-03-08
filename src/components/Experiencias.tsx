@@ -35,7 +35,7 @@ const PAQUETES = [
     nombre: "Vuelo Aventura",
     descripcion: "Cascada, Páramo de Belmira y Valle de Piedra",
     incluye: ["Fotos HD incluidas", "Videos incluidos", "Piloto certificado", "Seguro incluido", "Ruta extendida"],
-    whatsapp: "https://wa.me/573169453767?text=Hola,%20quiero%20reservar%20vuelo%2020min%20($340k)%20-%20Cascada,%20Páramo%20y%20Valle%20de%20Piedra",
+    whatsapp: "https://wa.me/573013458809?text=Hola,%20quiero%20reservar%20vuelo%2020min%20($340k)%20-%20Cascada,%20Páramo%20y%20Valle%20de%20Piedra",
     destacado: false,
     imagen: vuelo6,
   },
