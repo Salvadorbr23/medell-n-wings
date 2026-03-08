@@ -18,7 +18,7 @@ const HERO_SUBTITLE = "'Vuela hacía la libertad' Vive una experiencia única en
 const HERO_URGENCY = "Cupos diarios limitados – Reserva ahora tu aventura.";
 
 /* URL WhatsApp - cambiar número aquí */
-const WHATSAPP_URL = "https://wa.me/573169453767?text=Hola%20First%20Class%20Parapente,%20quiero%20reservar%20mi%20vuelo";
+const WHATSAPP_URL = "https://wa.me/573013458809?text=Hola%20First%20Class%20Parapente,%20quiero%20reservar%20mi%20vuelo";
 
 const Hero = () => {
   return (

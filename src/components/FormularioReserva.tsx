@@ -67,7 +67,7 @@ const FormularioReserva = () => {
       .filter(Boolean)
       .join("\n");
 
-    const url = `https://wa.me/573169453767?text=${encodeURIComponent(mensaje)}`;
+    const url = `https://wa.me/573013458809?text=${encodeURIComponent(mensaje)}`;
 
     setEnviado(true);
 
