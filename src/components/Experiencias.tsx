@@ -47,7 +47,7 @@ const PAQUETES = [
     nombre: "Experiencia Completa",
     descripcion: "Cascada + Páramo + Valle de Piedra + Represa",
     incluye: ["Fotos HD incluidas", "Videos incluidos", "Piloto certificado", "Seguro incluido", "Ruta completa", "La mejor vista"],
-    whatsapp: "https://wa.me/573169453767?text=Hola,%20quiero%20reservar%20vuelo%2030min%20($490k)%20-%20Experiencia%20completa",
+    whatsapp: "https://wa.me/573013458809?text=Hola,%20quiero%20reservar%20vuelo%2030min%20($490k)%20-%20Experiencia%20completa",
     destacado: true,
     imagen: vuelo5,
   },
