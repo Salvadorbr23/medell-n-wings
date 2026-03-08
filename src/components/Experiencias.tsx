@@ -23,7 +23,7 @@ const PAQUETES = [
     nombre: "Vuelo Cascada",
     descripcion: "Cascada y Páramo de Belmira",
     incluye: ["Fotos HD incluidas", "Videos incluidos", "Piloto certificado", "Seguro incluido"],
-    whatsapp: "https://wa.me/573169453767?text=Hola,%20quiero%20reservar%20vuelo%2015min%20($270k)%20-%20Cascada%20y%20Páramo%20de%20Belmira",
+    whatsapp: "https://wa.me/573013458809?text=Hola,%20quiero%20reservar%20vuelo%2015min%20($270k)%20-%20Cascada%20y%20Páramo%20de%20Belmira",
     destacado: false,
     imagen: vuelo1,
   },
