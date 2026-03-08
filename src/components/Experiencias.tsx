@@ -54,7 +54,7 @@ const PAQUETES = [
 ];
 
 /* Transporte adicional */
-const TRANSPORTE_WHATSAPP = "https://wa.me/573169453767?text=Hola,%20quiero%20agregar%20transporte%20hotel%20↔%20despegue%20($130k)";
+const TRANSPORTE_WHATSAPP = "https://wa.me/573013458809?text=Hola,%20quiero%20agregar%20transporte%20hotel%20↔%20despegue%20($130k)";
 
 const Experiencias = () => {
   return (
