@@ -23,7 +23,7 @@ const PAQUETES = [
     nombre: "Vuelo Cascada",
     descripcion: "Cascada y Páramo de Belmira",
     incluye: ["Fotos HD incluidas", "Videos incluidos", "Piloto certificado", "Seguro incluido"],
-    whatsapp: "https://wa.me/573169453767?text=Hola,%20quiero%20reservar%20vuelo%2015min%20($270k)%20-%20Cascada%20y%20Páramo%20de%20Belmira",
+    whatsapp: "https://wa.me/573013458809?text=Hola,%20quiero%20reservar%20vuelo%2015min%20($270k)%20-%20Cascada%20y%20Páramo%20de%20Belmira",
     destacado: false,
     imagen: vuelo1,
   },
@@ -35,7 +35,7 @@ const PAQUETES = [
     nombre: "Vuelo Aventura",
     descripcion: "Cascada, Páramo de Belmira y Valle de Piedra",
     incluye: ["Fotos HD incluidas", "Videos incluidos", "Piloto certificado", "Seguro incluido", "Ruta extendida"],
-    whatsapp: "https://wa.me/573169453767?text=Hola,%20quiero%20reservar%20vuelo%2020min%20($340k)%20-%20Cascada,%20Páramo%20y%20Valle%20de%20Piedra",
+    whatsapp: "https://wa.me/573013458809?text=Hola,%20quiero%20reservar%20vuelo%2020min%20($340k)%20-%20Cascada,%20Páramo%20y%20Valle%20de%20Piedra",
     destacado: false,
     imagen: vuelo6,
   },
@@ -47,14 +47,14 @@ const PAQUETES = [
     nombre: "Experiencia Completa",
     descripcion: "Cascada + Páramo + Valle de Piedra + Represa",
     incluye: ["Fotos HD incluidas", "Videos incluidos", "Piloto certificado", "Seguro incluido", "Ruta completa", "La mejor vista"],
-    whatsapp: "https://wa.me/573169453767?text=Hola,%20quiero%20reservar%20vuelo%2030min%20($490k)%20-%20Experiencia%20completa",
+    whatsapp: "https://wa.me/573013458809?text=Hola,%20quiero%20reservar%20vuelo%2030min%20($490k)%20-%20Experiencia%20completa",
     destacado: true,
     imagen: vuelo5,
   },
 ];
 
 /* Transporte adicional */
-const TRANSPORTE_WHATSAPP = "https://wa.me/573169453767?text=Hola,%20quiero%20agregar%20transporte%20hotel%20↔%20despegue%20($130k)";
+const TRANSPORTE_WHATSAPP = "https://wa.me/573013458809?text=Hola,%20quiero%20agregar%20transporte%20hotel%20↔%20despegue%20($130k)";
 
 const Experiencias = () => {
   return (

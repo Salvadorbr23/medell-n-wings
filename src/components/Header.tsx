@@ -23,7 +23,7 @@ const NAV_LINKS = [
 ];
 
 /* URL de WhatsApp principal - cambiar número aquí */
-const WHATSAPP_RESERVAR = "https://wa.me/573169453767?text=Hola%20First%20Class%20Parapente,%20quiero%20reservar%20mi%20vuelo";
+const WHATSAPP_RESERVAR = "https://wa.me/573013458809?text=Hola%20First%20Class%20Parapente,%20quiero%20reservar%20mi%20vuelo";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);

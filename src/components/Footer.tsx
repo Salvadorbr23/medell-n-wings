@@ -11,8 +11,8 @@ import { Phone, Instagram, Mail } from "lucide-react";
 import logo from "@/assets/logo.jpg";
 
 /* Datos de contacto - cambiar aquí */
-const WHATSAPP_URL = "https://wa.me/573169453767?text=Hola%20First%20Class%20Parapente,%20quiero%20información";
-const WHATSAPP_DISPLAY = "+57 316 945 3767";
+const WHATSAPP_URL = "https://wa.me/573013458809?text=Hola%20First%20Class%20Parapente,%20quiero%20información";
+const WHATSAPP_DISPLAY = "+57 301 345 8809";
 const INSTAGRAM_URL = "https://www.instagram.com/first_classparapentemedellin/";
 const INSTAGRAM_HANDLE = "@first_classparapentemedellin";
 const EMAIL = "info@firstclassparapente.com";
